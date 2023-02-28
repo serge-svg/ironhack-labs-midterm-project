@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #E5E5E5;
+    min-width: 400px; /* TO ASK */
 }
 
 header {    
@@ -28,7 +29,12 @@ header div {
     display: flex;
     justify-content: space-around;  /* Horizontal */
     align-items: center;            /* Vertical   */    
+
     margin-top: 50px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 header div img {
@@ -100,26 +106,23 @@ header a {
 }
   
 /* Hide the link that should open and close the nav-top on small screens */
-.nav-top .icon {
+.icon {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .nav-top a {
         display: none;
     }
     .header-button {
         display: none;
     }    
-    .nav-top a.icon {
-        position: absolute;
-        right: 20;
-        top: 20;
+    .icon {
         display: block;
     }    
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .nav-top.responsive {
         position: relative; 
     }
