@@ -1,13 +1,14 @@
 /* Toggle between adding and removing the "responsive" class to nav-top 
-   when the user clicks on the icon */
-function burguerFunction() {
-    var x = document.querySelector(".nav-top");
-    if (x.className === "nav-top") {
-        console.log(1)
-        x.className += " responsive";
-    } else {
-        console.log(2)
-        x.className = "nav-top";
-    }
-}
+   when the user clicks on the icon 
+*/
 
+function burguerFunction() {
+  var verticalMenu = document.querySelector('.vertical-menu');
+  if (verticalMenu.style.display === "block") {
+    console.log("hide v-m");
+    verticalMenu.style.display = "none";
+  } else {
+    console.log("show v-m");
+    verticalMenu.style.display = "block";
+  }
+}
