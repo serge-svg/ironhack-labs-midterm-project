@@ -5,40 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Circle</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css " />
   </head>
   <body>
     <header>
-        <div class="horizotal-menu">
-          <div>
-            <img src="./images/logos/circle.svg">
-            <div class="vertical-menu">
-              <ul>
-                <li><a href="#home">Home</a></li>
+          <img class="header-logo" src="./images/logos/circle.svg" alt="circle-logo">                                
+          
+          <button id="burguer-icon-on" class="burguer-icon-on"><i class="fa fa-bars"></i></button>
+          <!--<a id="burguer-icon-on" href="javascript:void(0);" onclick="burguerFunction()"><i class="fa fa-bars"></i></a> -->
+          <nav class="nav">              
+              <button id="burguer-icon-off" class="burguer-icon-off"><i class="fa fa-bars"></i></button> 
+              <!--<a id="burguer-icon-off" href="javascript:void(0);" onclick="burguerFunction()"><i class="fa fa-bars"></i></a> -->
+              <ul class="nav-list">
+                <li><a id="home-link" href="#home">Home</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#sontact">Contact</a></li>
               </ul>
-            </div>
-          </div>
-  
-          <nav class="nav-top">
-                <a id="home-link" href="#home">Home</a>
-                <a href="#project">Projects</a>
-                <a href="#services">Services</a>
-          </nav>
-          <a class="header-button" href="#contact"><p>Contact Us</p></a>
-          <a class="icon" href="javascript:void(0);" onclick="burguerFunction()">
-            <i class="fa fa-bars"></i>
-          </a>  
-    
-        </div>
+          </nav>            
 
-    
+          <a class="header-button" href="#contact"><p>Contact Us</p></a>
     </header>
 
     <section id="main">
+
     </section>
 
     <script src="javascript/index.js"></script> 
