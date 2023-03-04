@@ -1,13 +1,13 @@
-/* Toggle between adding and removing the "responsive" class to nav-top 
-   when the user clicks on the icon */
-function burguerFunction() {
-    var x = document.querySelector(".nav-top");
-    if (x.className === "nav-top") {
-        console.log(1)
-        x.className += " responsive";
-    } else {
-        console.log(2)
-        x.className = "nav-top";
-    }
-}
+  const nav = document.querySelector('.nav');
+  const burguerOn = document.querySelector('.burguer-icon-on');
+  const burguerOff = document.querySelector('.burguer-icon-off');
+
+  burguerOn.addEventListener("click", () => {
+    nav.classList.add("visible");
+  })
+
+  burguerOff.addEventListener("click", () => {
+    nav.classList.remove("visible");
+  })
+
 
