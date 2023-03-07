@@ -5,50 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Circle</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css " />
     <link rel="stylesheet" type="text/css" href="./styles/style.css " />
   </head>
   <body>
     <header>
-          <img class="header-logo" src="./images/logos/circle.svg" alt="circle-logo">                                
-          
-          <button id="burguer-icon-on" class="burguer-icon-on"><i class="fa fa-bars"></i></button>
+      <img
+        class="header-logo"
+        src="./images/logos/circle.svg"
+        alt="circle-logo"
+      />
 
-          <nav class="nav">              
-              <button id="burguer-icon-off" class="burguer-icon-off"><i class="fa fa-bars"></i></button> 
-              <ul class="nav-list">
-                <li><a id="home-link" href="#home">Home</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-              </ul>
-          </nav>            
+      <nav class="nav">
+        <button id="burguer-icon-off" class="burguer-icon-off">
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-list">
+          <li><a id="home-link" href="#home">Home</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
 
-          <a class="header-button" href="#contact"><p>Contact Us</p></a>
+      <a id="header-button" class="blue-button" href="#contact">Contact Us</a>
+      <button id="burguer-icon-on" class="burguer-icon-on">
+        <i class="fa fa-bars"></i>
+      </button>
     </header>
 
     <section class="hero">
-      
-      <div class="hero-column">        
+      <div class="hero-column">
         <article class="hero-left">
           <h1>Empower Your Business With Stunning Design!</h1>
-          
-          <p>Circle is a digital design and development studio. 
-            We design and develop astonishing websites and mobile apps.</p>
-            
-          <a class="in-touch-button" href="#in-touch"><p>Get in touch</p></a>
-          
-          <a class="our-work-button" href="#our-work"><p>See our work</p></a>
+
+          <p>
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
         </article>
+
+        <div class="hero-buttons">
+          <a class="blue-button" href="#in-touch">Get in touch</a>
+
+          <a class="transparent-button" href="#our-work">See our work</a>
+        </div>
       </div>
 
       <div class="hero-column">
-        <article class="hero-right">
-          <img class="hero-logo" src="./images/hero-section/hero-image.png" alt="hero logo">
-        </article> 
+        <div class="image-stack">
+          <img
+            class="hero-card"
+            src="./images/hero-section/card-1.png"
+            alt="card1 logo"
+          />
+          <img
+            class="hero-logo"
+            src="./images/hero-section/card-2.png"
+            alt="card2 logo"
+          />
+        </div>
       </div>
 
     </section>
 
-    <script src="javascript/index.js"></script> 
+    <section class="logos-bw">
+        <img
+          class="hero-card"
+          src="./images/logos/airbnb-logo.svg"
+          alt="airbnb logo"
+        />
+        <img
+          class="hero-card"
+          src="./images/logos/google-logo.svg"
+          alt="google logo"
+        />
+        <img
+          class="hero-card"
+          src="./images/logos/microsoft-logo.svg"
+          alt="microsoft logo"
+        />
+        <img
+          class="hero-card"
+          src="./images/logos/fedex-logo.svg"
+          alt="fedex logo"
+        />
+        <img
+          class="hero-card"
+          src="./images/logos/amazon-logo.svg"
+          alt="amazon logo"
+        />
+
+    </section>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
