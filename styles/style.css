@@ -59,7 +59,9 @@ header {
     color: #072AC8;;
 }
 
-a.header-button {
+
+.header-button,
+.in-touch-button {
     background-color: #072AC8;
     color: #FFFFFF;
     
@@ -101,6 +103,40 @@ a.header-button {
 
 .hero-logo {
     width: 570px;
+}
+
+.hero {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+  
+.hero-left h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.hero-left p {
+    color: #6B708D;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.hero-left {
+    border: solid 1px #6B708D;
+}
+
+.hero-right {
+    border: solid 1px #6B708D;
 }
 
 @media screen and (max-width: 767px) {
