@@ -8,16 +8,24 @@
   font-family: "Roboto", sans-serif;
 }
 
+section {
+  background-color: aliceblue;
+  margin: 5rem auto 0rem auto;
+}
+
 body {
   background-color: aliceblue;
+  width: 80%;
+  margin: 10rem auto 0rem auto;
 }
 
 header {
   background-color: aliceblue;
-
+  
+  top: 0;
+  position: fixed;
+  height: 120px;
   width: 80%;
-  margin: 10rem auto 0rem auto;
-  margin-top: 5rem;
 
   display: flex;
   justify-content: space-between;
@@ -87,9 +95,6 @@ header {
 }
 
 .hero {
-  width: 80%;
-  margin: 10rem auto 0rem auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -150,15 +155,49 @@ header {
 }
 
 .logos-bw {
-    width: 80%;
-    margin: 10rem auto 0rem auto;
     display: flex;
     justify-content: space-between;
     
 }
+
 .logos-bw img {
   width: 100px;
   filter: grayscale(100%);
+}
+
+.recent-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.recent-projects .projects {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between; 
+  gap: 2rem;
+}
+
+.recent-projects .projects article {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 20px;
+  gap: 10px;
+}
+
+.card-text a {
+  margin-top: 20px;
+}
+
+.recent-projects article img {
+  height: 240px;
 }
 
 @media screen and (max-width: 767px) {
