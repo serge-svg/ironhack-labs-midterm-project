@@ -15,27 +15,29 @@
   </head>
   <body>
     <header>
-      <img
-        class="header-logo"
-        src="./images/logos/circle.svg"
-        alt="circle-logo"
-      />
+      <div class="nav-bar-container">
+        <img
+          class="header-logo"
+          src="./images/logos/circle.svg"
+          alt="circle-logo"
+        />
 
-      <nav class="nav">
-        <button id="burguer-icon-off" class="burguer-icon-off">
+        <nav class="nav">
+          <button id="burguer-icon-off" class="burguer-icon-off">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav-list">
+            <li><a id="home-link" href="#home">Home</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </nav>
+
+        <a id="header-button" class="blue-button" href="#contact">Contact Us</a>
+        <button id="burguer-icon-on" class="burguer-icon-on">
           <i class="fa fa-bars"></i>
         </button>
-        <ul class="nav-list">
-          <li><a id="home-link" href="#home">Home</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-        </ul>
-      </nav>
-
-      <a id="header-button" class="blue-button" href="#contact">Contact Us</a>
-      <button id="burguer-icon-on" class="burguer-icon-on">
-        <i class="fa fa-bars"></i>
-      </button>
+      </div>
     </header>
 
     <section class="hero">
@@ -133,9 +135,102 @@
         </article>
       </div>  
     </section>
-<br>
-<br>
-<br>
+
+    <section class="clients">
+
+      <div class="clients-left">
+        <img class="memojis" src="images/testimonial-section/memoji-1.png" alt="memoji-1">
+        <img class="memojis" src="images/testimonial-section/memoji-3.png" alt="memoji-3">
+      </div>
+
+      <div class="clients-center">
+        <h2>Hear What Our Clients Have to Say</h2>
+        <h3>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h2>
+        <div>
+          <img class="profile" src="images/testimonial-section/profile.png" alt="profile">
+          <div class="client-card-text">
+            <h4>Kristin Watson</h4>
+            <p>Booking.com</p>
+          </div>  
+        </div>
+      </div>
+
+      <div class="clients-right">
+        <img class="memojis" src="images/testimonial-section/memoji-2.png" alt="memoji-2">
+        <img class="memojis" src="images/testimonial-section/memoji-4.png" alt="memoji-4">
+      </div>
+
+    </section>
+
+    <section class="our-services">
+      <h2>Our Services</h2>
+
+      <div class="services">
+        <article>
+          <div class="card-text">
+            <div class="services-img-container">
+              <img class="services-img" src="images/services-section/icons/1.svg" alt="interface">
+            </div>
+            <h2>User Interface Design</h2>
+            <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+            <a href="#interface">Learn more</a>
+          </div>
+        </article>
+        
+        <article>
+          <div class="card-text">
+            <img class="services-img" src="images/services-section/icons/2.svg" alt="experience">
+            <h2>User Experience Design</h2>
+            <p>Circle always focuses on delivering the best user experience to your customers.</p>
+            <a href="#experience">Learn more</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="card-text">
+            <img class="services-img" src="images/services-section/icons/3.svg" alt="development">
+            <h2>Application Development</h2>
+            <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+            <a href="#development">Learn more</a>
+          </div>
+        </article>
+      </div>  
+    </section>
+
+    <section class="questions">
+      <h2>Do you have any questions?</h2>
+      <h3>Let us help you!</h3>
+      <div class="subscribe">
+        <input class="email" type="text" name="email" placeholder="Enter you email">
+        <a id="subscribe-button" href="#subscribe">Subscribe</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <img
+          class="header-logo"
+          src="./images/logos/circle.svg"
+          alt="circle-logo"
+        />
+        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-row">
+            <p>Team</p>
+            <p>Services</p>
+            <p>About Us</p>    
+        </div>
+        <div class="footer-row">
+            <p>Press</p>
+            <p>Projects</p>
+            <p>Privacy Policy</p>    
+        </div>
+      </div>
+    </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
+
