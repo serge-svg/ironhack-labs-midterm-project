@@ -1,7 +1,44 @@
 h1 { 
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
+   color: #292E47;
+   
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 70px;
+ }
+
+ h2 {
+   color: #6B708D;
+
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+ }
+
+ h3 {
+   color: #292E47;
+   
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 47px;  
+ }
+
+.text {
+   font-family: 'Roboto';
+   font-style: normal;
+   color: #6B708D;
+}
+
+.body-intro-regular {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+ }
+ 
+ .body-intro-regular {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   color: #6B708D;
  }
 
  .blue-button {
