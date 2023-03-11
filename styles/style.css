@@ -9,13 +9,12 @@
 }
 
 section {
-  margin: 5rem auto 0rem auto;
+  margin-bottom: 10vh;
 }
 
 body {
   background-color: aliceblue;
   width: 100%;
-  margin: 10rem auto 0rem auto;
 }
 
 .nav-bar-container {
@@ -24,27 +23,26 @@ body {
   align-items: center;
 
   width: 100%;
-  padding: 10%;
 }
 
 header {
   background-color: aliceblue;
   
   width: 100%;
-  top: 0;
+
   position: fixed;
+  
   height: 120px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  z-index: 99;
+  padding: 0 10% 0 10%;
 }
 
 .header-logo {
-  max-width: 5rem;
-  padding: 10px;
+  max-width: 5rem;  
 }
 
 .nav {
@@ -113,7 +111,7 @@ header {
   flex-wrap: wrap;
 
   width: 100%;
-  padding: 0 10% 0 10%;
+  padding: 10% 10% 0 10%;
 }
 
 .hero-buttons {
@@ -175,14 +173,13 @@ header {
 .logos-bw {
     display: flex;
     justify-content: space-between;    
+    width: 100%;
+    padding: 0 10% 0 10%;
 }
 
 .logos-bw img {
-  width: 100px;
   filter: grayscale(100%);
-
-  width: 100%;
-  padding: 0 10% 0 10%;
+  width: 100px;
 }
 
 /**************************************** RECENT PROJECTS ********************************/
@@ -395,6 +392,13 @@ article a{
 }
 
 /**************************************** QUESTIONS **************************************/
+.flex-questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;    
+}
+
 .questions {
   background-color: #FFC600;
   height: 500px;
@@ -405,7 +409,9 @@ article a{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
   gap: 2rem;
+
 }
 
 .questions h2 {
@@ -476,7 +482,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10%;
+  padding: 5% 10% 10% 10%;
 }
 
 footer p {
@@ -490,6 +496,10 @@ footer p {
 
 .footer-left {
   width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vh; 
 }
 
 .footer-right {
@@ -497,12 +507,40 @@ footer p {
   
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 4vh;
 }
 
 .footer-row {
-  display: flex; 
+  display: flex;
+  justify-content: space-around; 
+}
 
+/*************************************** PROJECTS ****************************/
+
+.simplify {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2vh;
+  
+  width: 100%;
+  padding: 10% 10% 0 10%;
+}
+
+.simplify div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.simplify article {
+  display: flex;
+  flex-direction: column; 
+  gap: 10vh;
+}
+
+.simplify-img {
+  width: 100%;
+  height: 70vh;
 }
 
 @media screen and (max-width: 767px) {
@@ -557,3 +595,4 @@ footer p {
     color: #ffffff;
   }
 }
+
